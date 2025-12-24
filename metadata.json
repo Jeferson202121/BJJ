@@ -1,0 +1,22 @@
+{
+  "name": "Copy of BJJ PRO | GitHub Federation 11",
+  "short_name": "BJJ PRO",
+  "description": "Gestão Profissional de Jiu-Jitsu com Deploy via GitHub.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#050505",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

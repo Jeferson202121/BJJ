@@ -1,0 +1,14 @@
+
+# Cache e Logs
+.DS_Store
+node_modules/
+dist/
+build/
+*.log
+
+# Local storage do navegador (simulado)
+.local_storage_dump
+
+# Variáveis de Ambiente
+.env
+.env.local
