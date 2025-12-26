@@ -1,11 +1,20 @@
-<div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# BJJ Master Manager - Guia de Publicação
 
-  <h1>Built with AI Studio</h2>
+Este app foi projetado para ser publicado no **Netlify** ou **Vercel** gratuitamente.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Como Publicar On-line
+1. Salve este projeto em um repositório no GitHub.
+2. Conecte sua conta do GitHub ao Netlify (netlify.com).
+3. Selecione o repositório. O Netlify detectará automaticamente os arquivos.
+4. Clique em **Deploy site**. Seu app estará on-line em segundos!
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Funcionalidades de Interação
+- **Administradores:** Gerenciam alunos, professores e veem o resumo financeiro global.
+- **Professores:** Podem postar avisos técnicos no Mural e anunciar produtos (Kimonos, etc) na Loja.
+- **Alunos:** Acompanham sua graduação, veem avisos dos mestres e podem solicitar a compra de equipamentos diretamente pelo app.
 
-</div>
+## Segurança
+Este protótipo usa `localStorage` para persistência. Para produção:
+1. Conecte ao Firebase Auth para logins reais.
+2. Use Firestore para banco de dados compartilhado.

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão BJJ | Midnight Gold</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #020617; /* Slate-950: Quase preto */
+            --accent-gold: #f59e0b; /* Amber-500: Dourado vibrante */
+            --accent-gold-hover: #d97706; /* Amber-600 */
+            --text-primary: #f8fafc; /* Slate-50 */
+            --card-bg: #0f172a; /* Slate-900 */
+            --border-color: rgba(245, 158, 11, 0.15);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+        .bjj-header-font {
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.02em;
+            font-weight: 800;
+        }
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 25px -5px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            box-shadow: 0 25px 50px -12px rgba(245, 158, 11, 0.08);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+        .gold-glow-button {
+            background: var(--accent-gold);
+            color: #020617;
+            font-weight: 800;
+            transition: all 0.2s ease;
+            box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.3);
+        }
+        .gold-glow-button:hover {
+            background: #fbbf24;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px -5px rgba(245, 158, 11, 0.4);
+        }
+        .sidebar-item-active {
+            background-color: rgba(245, 158, 11, 0.1);
+            color: var(--accent-gold);
+            box-shadow: inset 0 0 0 1px rgba(245, 158, 11, 0.2);
+        }
+        @keyframes fade-up {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-up {
+            animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #451a03; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
